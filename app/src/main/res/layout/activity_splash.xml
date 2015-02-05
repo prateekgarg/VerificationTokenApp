@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#673AB7"
+    tools:context="com.garg.prateek.verificationtokenapp.Splash">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/uic_logo"
+        android:keepScreenOn="true"
+        android:textSize="110sp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#dedede"
+        android:paddingTop="40dp"
+        android:text="@string/uic" />
+
+    <TextView android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:textColor="#fff"
+        android:fontFamily="sans-serif-light"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:text="@string/dummy_content" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout android:id="@+id/fullscreen_content_controls"
+            style="?attr/metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
