@@ -6,7 +6,7 @@ import android.app.AlertDialog;         //For the error DialogBox if login was n
 import android.content.Context;         //During File creation, this is the file providing MODE_PRIVATE
 import android.content.DialogInterface; //For specifying the interface information on the DialogBox
 import android.content.Intent;          //You know this one :P
-import android.content.SharedPreferences;   //persistent storage... added by Dhruv
+import android.content.SharedPreferences;   //persistent storage.
 import android.net.ConnectivityManager; // To get the connectivity state of the device
 import android.net.NetworkInfo;         //ConnectionManager calls this to get the network state.
 import android.os.AsyncTask;            //For doing tasks in background. Class extends this, and overrides the methods.
@@ -15,7 +15,7 @@ import android.util.Log;                //LogCat FTW
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.animation.Animation;    //Added by Dhruv, for the transition effect
+import android.view.animation.Animation;    //for the transition effect
 import android.view.animation.AnimationUtils;   //Contains the effects: transition elements together or sequentially, and so on
 //import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
